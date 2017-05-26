@@ -1,5 +1,6 @@
-package org.spring.data.framework.mybatis;
+package org.spring.data.framework.mybatis.bean;
 
+import org.spring.data.framework.mybatis.bean.IMapper;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

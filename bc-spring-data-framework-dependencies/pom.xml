@@ -5,7 +5,7 @@
 
     <artifactId>bc-spring-data-framework-dependencies</artifactId>
     <groupId>org.spring.data.framework</groupId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>bc-spring-data-framework-dependencies</name>
@@ -20,7 +20,7 @@
         <bc-data-framework-jpa.version>1.0.0</bc-data-framework-jpa.version>
         <bc-data-framework-memcache.version>1.0.0</bc-data-framework-memcache.version>
         <bc-data-framework-mongodb.version>1.0.0</bc-data-framework-mongodb.version>
-        <bc-data-framework-mybatis.version>1.0.0</bc-data-framework-mybatis.version>
+        <bc-data-framework-mybatis.version>1.0.2</bc-data-framework-mybatis.version>
         <bc-data-framework-redis.version>1.0.0</bc-data-framework-redis.version>
         <bc.release.url>http://101.69.254.214:8081/nexus/content/repositories/releases</bc.release.url>
         <bc.snapshots.url>http://101.69.254.214:8081/nexus/content/repositories/snapshots</bc.snapshots.url>

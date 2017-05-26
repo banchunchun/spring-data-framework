@@ -1,4 +1,4 @@
-package org.spring.data.framework.mybatis;
+package org.spring.data.framework.mybatis.bean;
 
 import org.apache.ibatis.session.ExecutorType;
 import org.springframework.boot.context.properties.ConfigurationProperties;

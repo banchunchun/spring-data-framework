@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  org.spring.data.framework.mybatis.MybatisConfiguration
+  org.spring.data.framework.mybatis.bean.MybatisConfiguration,\
+  org.spring.data.framework.mybatis.bean.MyBatisMapperConfiguration

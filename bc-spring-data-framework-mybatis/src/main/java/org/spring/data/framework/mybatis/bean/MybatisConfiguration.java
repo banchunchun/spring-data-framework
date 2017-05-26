@@ -1,4 +1,4 @@
-package org.spring.data.framework.mybatis;
+package org.spring.data.framework.mybatis.bean;
 
 import com.github.pagehelper.PageInterceptor;
 import org.apache.commons.lang3.StringUtils;
@@ -7,6 +7,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.boot.autoconfigure.SpringBootVFS;
+import org.spring.data.framework.mybatis.bean.DefaultMyBatisProperties;
+import org.spring.data.framework.mybatis.bean.DefaultPageHelperProperties;
+import org.spring.data.framework.mybatis.bean.IMybatisProperties;
+import org.spring.data.framework.mybatis.bean.IPageHelperProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
