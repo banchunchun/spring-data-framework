@@ -8,21 +8,46 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bc-spring-data-framework-mybatis</artifactId>
+    <groupId>org.spring.data.framework</groupId>
+    <version>${bc-data-framework-mybatis.version}</version>
     <packaging>jar</packaging>
 
     <name>bc-spring-data-framework-mybatis</name>
     <url>http://maven.apache.org</url>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <pagehelper.version>5.0.0</pagehelper.version>
     </properties>
-
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>com.mamahao.data.framework</groupId>
+            <artifactId>mamahao-data-framework-commons</artifactId>
+            <version>${bc-data-framework-commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mamahao.data.framework</groupId>
+            <artifactId>mamahao-data-framework-datasource</artifactId>
+            <version>${bc-data-framework-datasource.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>${tk.mybatis.version}</version>
         </dependency>
     </dependencies>
 </project>
