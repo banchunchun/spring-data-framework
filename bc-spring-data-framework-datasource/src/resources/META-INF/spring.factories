@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.spring.data.framework.datasource.DataSourceConfiguration,\
+  org.spring.data.framework.datasource.aop.DynamicDataSourceAspectConfiguration
