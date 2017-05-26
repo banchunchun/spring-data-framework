@@ -20,6 +20,7 @@
         <module>bc-spring-data-framework-redis</module>
         <module>bc-spring-data-framework-mongodb</module>
         <module>bc-spring-data-framework-memcache</module>
+        <module>bc-spring-data-framework-dependencies</module>
     </modules>
     <packaging>pom</packaging>
 

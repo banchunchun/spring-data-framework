@@ -46,7 +46,7 @@ public class MybatisConfiguration implements EnvironmentAware{
 
     @Override
     public void setEnvironment(Environment environment) {
-        pageHelperPropertiesResolver = new RelaxedPropertyResolver(environment, "mamahao.data.mybatis.pagehelper.");
+        pageHelperPropertiesResolver = new RelaxedPropertyResolver(environment, "bc.data.mybatis.pagehelper.");
     }
 
     @Bean
