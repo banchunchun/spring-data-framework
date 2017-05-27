@@ -41,7 +41,7 @@
     
 ##如何使用
 ###加入依赖
-**使用mybatis**
+**使用mybatis，配置扫描的包路径需要加上org.spring.data.framework**
 ```
 <dependency>
     <groupId>org.spring.data.framework</groupId>
