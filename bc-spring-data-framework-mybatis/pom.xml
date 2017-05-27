@@ -20,13 +20,13 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.mamahao.data.framework</groupId>
-            <artifactId>mamahao-data-framework-commons</artifactId>
+            <groupId>org.spring.data.framework</groupId>
+            <artifactId>bc-spring-data-framework-common</artifactId>
             <version>${bc-data-framework-commons.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.mamahao.data.framework</groupId>
-            <artifactId>mamahao-data-framework-datasource</artifactId>
+            <groupId>org.spring.data.framework</groupId>
+            <artifactId>bc-spring-data-framework-datasource</artifactId>
             <version>${bc-data-framework-datasource.version}</version>
         </dependency>
         <dependency>
