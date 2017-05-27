@@ -15,6 +15,7 @@
     <modules>
         <module>bc-spring-data-framework-common</module>
         <module>bc-spring-data-framework-datasource</module>
+        <module>bc-spring-data-framework-dependencies</module>
         <module>bc-spring-data-framework-mybatis</module>
         <module>bc-spring-data-framework-jpa</module>
         <module>bc-spring-data-framework-redis</module>
