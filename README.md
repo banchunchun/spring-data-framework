@@ -78,23 +78,23 @@ bc:
                           master: true                                              ##是否是主节点
                           type: com.alibaba.druid.pool.DruidDataSource
                           driver-class-name: com.mysql.jdbc.Driver
-                          url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
+                          url: jdbc:mysql://172.28.1.6:3306/db?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxxx
                         -
                           name: ms0_ds1
                           type: com.alibaba.druid.pool.DruidDataSource
                           driver-class-name: com.mysql.jdbc.Driver
-                          url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
+                          url: jdbc:mysql://172.28.1.6:3306/db?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxx
                         -
                           name: ms0_ds2
                           type: com.alibaba.druid.pool.DruidDataSource
                           driver-class-name: com.mysql.jdbc.Driver
-                          url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
+                          url: jdbc:mysql://172.28.1.6:3306/xxx?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxx
                     -
                       group-name: ms1
                       items:
@@ -103,16 +103,16 @@ bc:
                           master: true
                           type: com.alibaba.druid.pool.DruidDataSource
                           driver-class-name: com.mysql.jdbc.Driver
-                          url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
+                          url: jdbc:mysql://172.28.1.6:3306/xxx?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxx
                         -
                           name: ms1_ds1
                           type: com.alibaba.druid.pool.DruidDataSource
                           driver-class-name: com.mysql.jdbc.Driver
-                          url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
+                          url: jdbc:mysql://172.28.1.6:3306/xxx?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxx
                     -
                       group-name: ms2
                       items:
@@ -123,7 +123,7 @@ bc:
                           driver-class-name: com.mysql.jdbc.Driver
                           url: jdbc:mysql://172.28.1.6:3306/db_gd_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true
                           username: root
-                          password: mamahao
+                          password: xxxx
 ```
 
 **mybatis配置**
@@ -134,7 +134,7 @@ bc:
                 enabled: true                                           ##是否启用mybatis
                 mapper-locations: classpath*:mapper/*Mapper.xml         ##mapper文件地址
                 type-aliases-package: com.mamahao.actsys.api.entity     ##实体类所在包
-                base-package: com.mamahao.actsys.api.mapper             ##Mapper所在包
+                base-package: com.xxx.actsys.api.mapper             ##Mapper所在包
 ```
 **JPA配置**
 ```
@@ -149,7 +149,7 @@ bc:
                     dialect: org.hibernate.dialect.MySQL5Dialect    ##数据库dialect
                 entity-packages:                                    ##实体类的包列表
                     -
-                        com.mamahao.actsys.api.entity
+                        com.xxx.actsys.api.entity
 ```
 **Mongo配置**
 ```
@@ -212,19 +212,5 @@ bc:
                     host: 172.28.1.129              
                     port: 11211
 ```
-**Elasticsearch配置**
-```
-mamahao:
-  data:
-    elasticsearch:
-    clusterName: elasticsearch ##集群名
-    clusterNodes: 172.28.1.142:3900,172.28.1.144:3900 ##节点 多个以逗号隔开
-    clientPingTimeout: 10s ##ping超时时间
-    addDeleteByQueryPlugin:true ##是否添加删除插件，默认为false、deleteDocuments相关方法将不能使用
-    properties:  ##此属性为官方setttings中属性，配置实现参考spring-data-elasticsearch实现方式
-      client.transport.sniff:false
-      client.transport.ignore_cluster_name:true
-      client.transport.ping_timeout:10s
-      client.transport.nodes_sampler_interval:5s
-    
+
 ```
