@@ -181,15 +181,6 @@
         </plugins>
     </build>
     <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>bc-release</name>
-            <url>http://101.69.254.214:8081/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>bc-snapshots</name>
-            <url>http://101.69.254.214:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
+       
     </distributionManagement>
 </project>
