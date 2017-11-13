@@ -118,7 +118,7 @@
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper</artifactId>
-                <version>${tk-mybatis.version}</version>
+                <version>${tk.mybatis.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-beanutils</groupId>
