@@ -26,7 +26,7 @@
     如果使用mybatis作为ORM框架，引入此模块即可直接使用Mapper的方式操作数据库。
 ###bc-data-framework-jpa[JPA支持模块]
     使用JPA操作数据库，可以和mybatis支持模块同时使用。
-###mamahao-data-framework-mongo[MongoDB支持模块]
+###bc-data-framework-mongo[MongoDB支持模块]
     配置并实现了MongoService，同时支持获取MongoTemplate、MongoClient、DBCollection以及读写分离操作。
     另外也可以直接使用spring-data的repository方式操作mongo。
 ###bc-data-framework-redis[Redis支持模块]
